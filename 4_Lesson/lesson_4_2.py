@@ -82,7 +82,17 @@ for _ in range(100):
     print(first_list)
 
 
+# Генерація довільного списку
+import random
+# my_list = []
+# # Не найоптимальніший варіант рішення
+# for i in range(random.randint(3, 10)):
+#     my_list.append(random.randint(3, 10))
+# print(my_list)
 
+# Оптимальний варіант
+my_list = [random.randint(3,10) for i in range(random.randint(3, 10))]
+print(my_list)
 
 
 
