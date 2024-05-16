@@ -4,7 +4,8 @@ def second_index(text: str, some_str: str) -> int or None:
         new_ind = text.find(some_str, ind + 1)
         if new_ind > 0:
             return new_ind
-        return None
+        else:
+            return None
 
 
 assert second_index("sims", "s") == 3, 'Test1'
